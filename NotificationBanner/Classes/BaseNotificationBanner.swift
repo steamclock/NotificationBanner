@@ -253,7 +253,7 @@ open class BaseNotificationBanner: UIView {
                 make.bottom.equalToSuperview()
             } else {
                 make.top.equalToSuperview()
-                make.bottom.equalTo(spacerView.snp.top)
+                make.bottom.equalTo(spacerView.snp.bottom).offset(-spacerViewDefaultOffset)
             }
 
             make.left.equalToSuperview()
